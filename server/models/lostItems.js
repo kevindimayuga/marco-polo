@@ -23,6 +23,6 @@ const lostItemsSchema = new Schema(
     }
 );
 
-const Items = model('Items', lostItemsSchema)
+const lostItems = model('LostItems', lostItemsSchema)
 
-module.exports = Items
+module.exports = lostItems
