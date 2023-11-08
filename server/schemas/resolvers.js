@@ -1,4 +1,4 @@
-const { User, foundItem, lostItem } = require('../models');
+const { users, foundItems, lostItems } = require('../models');
 
 const resolvers = {
 
