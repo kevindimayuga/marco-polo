@@ -1,0 +1,206 @@
+[
+    {
+        "Category": "Books",
+        "Item": "Book A",
+        "Location": "New York, NY",
+        "Date Lost": "2023-10-15"
+    },
+    {
+        "Category": "Clothing",
+        "Item": "Shirt",
+        "Location": "Los Angeles, CA",
+        "Date Lost": "2023-09-28"
+    },
+    {
+        "Category": "Electronics",
+        "Item": "Cell Phone",
+        "Location": "Chicago, IL",
+        "Date Lost": "2023-10-02"
+    },
+    {
+        "Category": "Documents",
+        "Item": "Passport",
+        "Location": "Miami, FL",
+        "Date Lost": "2023-09-20"
+    },
+    {
+        "Category": "Other",
+        "Item": "Keys",
+        "Location": "San Francisco, CA",
+        "Date Lost": "2023-10-10"
+    },
+    {
+        "Category": "Books",
+        "Item": "Book B",
+        "Location": "Houston, TX",
+        "Date Lost": "2023-10-12"
+    },
+    {
+        "Category": "Clothing",
+        "Item": "Dress",
+        "Location": "Phoenix, AZ",
+        "Date Lost": "2023-09-15"
+    },
+    {
+        "Category": "Electronics",
+        "Item": "Laptop",
+        "Location": "Philadelphia, PA",
+        "Date Lost": "2023-09-18"
+    },
+    {
+        "Category": "Documents",
+        "Item": "ID Card",
+        "Location": "Denver, CO",
+        "Date Lost": "2023-10-05"
+    },
+    {
+        "Category": "Other",
+        "Item": "Glasses",
+        "Location": "Seattle, WA",
+        "Date Lost": "2023-10-20"
+    },
+    {
+        "Category": "Books",
+        "Item": "Book C",
+        "Location": "Dallas, TX",
+        "Date Lost": "2023-09-29"
+    },
+    {
+        "Category": "Clothing",
+        "Item": "Shoes",
+        "Location": "Las Vegas, NV",
+        "Date Lost": "2023-09-25"
+    },
+    {
+        "Category": "Electronics",
+        "Item": "Tablet",
+        "Location": "Atlanta, GA",
+        "Date Lost": "2023-10-08"
+    },
+    {
+        "Category": "Documents",
+        "Item": "Driver License",
+        "Location": "Miami, FL",
+        "Date Lost": "2023-09-13"
+    },
+    {
+        "Category": "Books",
+        "Item": "Book B",
+        "Location": "Houston, TX",
+        "Date Lost": "2023-09-15"
+    },
+    {
+        "Category": "Clothing",
+        "Item": "Dress",
+        "Location": "Phoenix, AZ",
+        "Date Lost": "2023-10-05"
+    },
+    {
+        "Category": "Electronics",
+        "Item": "Laptop",
+        "Location": "Philadelphia, PA",
+        "Date Lost": "2023-09-22"
+    },
+    {
+        "Category": "Documents",
+        "Item": "ID Card",
+        "Location": "Boston, MA",
+        "Date Lost": "2023-10-07"
+    },
+    {
+        "Category": "Other",
+        "Item": "Glasses",
+        "Location": "Seattle, WA",
+        "Date Lost": "2023-09-25"
+    },
+    {
+        "Category": "Books",
+        "Item": "Book C",
+        "Location": "Denver, CO",
+        "Date Lost": "2023-10-03"
+    },
+    {
+        "Category": "Clothing",
+        "Item": "Shoes",
+        "Location": "Dallas, TX",
+        "Date Lost": "2023-09-19"
+    },
+    {
+        "Category": "Electronics",
+        "Item": "Tablet",
+        "Location": "Atlanta, GA",
+        "Date Lost": "2023-10-11"
+    },
+    {
+        "Category": "Documents",
+        "Item": "Driver License",
+        "Location": "Miami, FL",
+        "Date Lost": "2023-09-30"
+    },
+    {
+        "Category": "Other",
+        "Item": "Jewelry",
+        "Location": "San Diego, CA",
+        "Date Lost": "2023-10-14"
+    },
+    {
+        "Category": "Books",
+        "Item": "Book D",
+        "Location": "Chicago, IL",
+        "Date Lost": "2023-09-10"
+    },
+    {
+        "Category": "Clothing",
+        "Item": "Hat",
+        "Location": "San Francisco, CA",
+        "Date Lost": "2023-10-02"
+    },
+    {
+        "Category": "Electronics",
+        "Item": "Camera",
+        "Location": "Washington, D.C.",
+        "Date Lost": "2023-09-24"
+    },
+    {
+        "Category": "Documents",
+        "Item": "Visa",
+        "Location": "New York, NY",
+        "Date Lost": "2023-10-12"
+    },
+    {
+        "Category": "Other",
+        "Item": "Backpack",
+        "Location": "Los Angeles, CA",
+        "Date Lost": "2023-09-29"
+    },
+    {
+        "Category": "Books",
+        "Item": "Book E",
+        "Location": "Seattle, WA",
+        "Date Lost": "2023-10-09"
+    },
+    {
+        "Category": "Clothing",
+        "Item": "Jeans",
+        "Location": "Austin, TX",
+        "Date Lost": "2023-09-21"
+    },
+    {
+        "Category": "Electronics",
+        "Item": "Headphones",
+        "Location": "San Diego, CA",
+        "Date Lost": "2023-10-01"
+    },
+    {
+        "Category": "Documents",
+        "Item": "Social Security Card",
+        "Location": "Chicago, IL",
+        "Date Lost": "2023-09-17"
+    },
+    {
+        "Category": "Other",
+        "Item": "Umbrella",
+        "Location": "New Orleans, LA",
+        "Date Lost": "2023-10-06"
+    }
+]
