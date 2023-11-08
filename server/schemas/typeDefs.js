@@ -1,8 +1,8 @@
 const typeDefs = `
     type Query {
-        getUser(id: ID!): User
+        getSingleUser(id: ID!): User
         getUsers: [User]
-        getItem(id: ID!): Item
+        getSingleItem(id: ID!): Item
         getItems(category: String): [Item]
     }
 
