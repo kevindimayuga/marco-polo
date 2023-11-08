@@ -1,4 +1,4 @@
-# 🔎 Marco Polo 🔎
+# Marco Polo 🔎
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
@@ -47,6 +47,12 @@ The following steps were taken to complete the project:
 
 ## Credits
 
+Collaborators:
+
+- [Kevin Dimayuga](github.com/kevindimayuga)
+- [Eissa Purnell](github.com/eissamonet)
+- [Jacob Ontiveros](github.com/jmontiveros94)
+
 We used the following resources to help guide us to complete the portfolio project:
 
 - [MDN](https://developer.mozilla.org/en-US/)
@@ -77,9 +83,7 @@ N/A
 
 ## Contributions
 
-- [Kevin Dimayuga](github.com/kevindimayuga)
-- [Eissa Purnell](github.com/eissamonet)
-- [Jacob Ontiveros](github.com/jmontiveros94)
+N/A
 
 ## Tests
 
