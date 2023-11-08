@@ -24,6 +24,6 @@ const foundItemsSchema = new Schema(
     }
 );
 
-const foundItems = model('Items', foundItemsSchema);
+const foundItems = model('FoundItems', foundItemsSchema);
 
 module.exports = foundItems
