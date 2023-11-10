@@ -1,11 +1,10 @@
 const db = require('../config/connection');
-const { foundItems, lostItems, users } = require('../models');
+const { foundItemsData, lostItemsData, usersData } = require('../models');
 const cleanDB = require('./cleanDB');
-
 const lostItemsData = require('./lostItemData.json');
 const foundItemsData = require('./foundItemData.json');
 const usersData = require('./usersData.json');
-const user = require('../models/users');
+// const users = require('../models/users');
 
 
 db.once('open', async () => {
