@@ -1,14 +1,16 @@
 import { gql } from '@apollo/client';
 
-export const CREATE_LOSTITMES = gql`
+export const CREATE_LOSTITEMS = gql`
     mutation createLostItems($name: String!, $description: String!, $location: String!, $date: String!, $image: String!) {
         createLostItems(name: $name, description: $description, location: $location, date: $date, image: $image) {
             _id
             name
+            login
             description
             location
             date
             image
+            removeItem
         }
     }
 `;
@@ -18,10 +20,12 @@ export const CREATE_FOUNDITEMS = gql`
         createFoundItems(name: $name, description: $description, location: $location, date: $date, image: $image) {
             _id
             name
+            login
             description
             location
             date
             image
+            removeItem
         }
     }
 `;      
