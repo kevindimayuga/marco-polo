@@ -1,10 +1,10 @@
 const db = require('../config/connection');
-const { foundItems, lostItems, users, lostItems, lostItems } = require('../models');
+const { foundItems, lostItems, users } = require('../models');
 const cleanDB = require('./cleanDB');
 
-const lostItemsData = require('./lostItemsData.json');
-const foundItemsData = require('./foundItemsData.json');
-const usersData = require('./usersData.json');
+const lostItemsData = require('./lostItemData.json');
+const foundItemsData = require('./foundItemData.json');
+// const usersData = require('./usersData.json');
 const user = require('../models/users');
 
 
