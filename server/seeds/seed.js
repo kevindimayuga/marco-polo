@@ -4,7 +4,7 @@ const cleanDB = require('./cleanDB');
 
 const lostItemsData = require('./lostItemData.json');
 const foundItemsData = require('./foundItemData.json');
-// const usersData = require('./usersData.json');
+const usersData = require('./usersData.json');
 const user = require('../models/users');
 
 
