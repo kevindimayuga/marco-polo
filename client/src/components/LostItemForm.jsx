@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useLazyQuery } from "@apollo/client";
 import { GET_LOST_ITEMS } from "../utils/mutations";
 
-function LostItemSearch() {
+const LostItemSearch = () => {
     // This will hold the search parameters that will be used in the GET_LOST_ITEMS query.
     const [category, setCategory] = useState('');
     const [itemName, setItemName] = useState('');
@@ -14,14 +14,14 @@ function LostItemSearch() {
     const [searchLostItems, { loading, error, data }] = useLazyQuery(GET_LOST_ITEMS);
 
     const handleSearch = () => {
-      searchLostItems({
-        variables: {
-          category,
-          itemName,
-          location,
-          dateLost,
-        },
-      });
+        searchLostItems({
+            variables: {
+                category,
+                itemName,
+                location,
+                dateLost,
+            },
+        });
     };
 
     return (
