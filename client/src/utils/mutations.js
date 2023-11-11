@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
-export const CREATE_LOSTITMES = gql`
-    mutation createLostItems($name: String!, $description: String!, $location: String!, $date: String!, $image: String!) {
-        createLostItems(name: $name, description: $description, location: $location, date: $date, image: $image) {
+export const ADD_FOUND_ITEM = gql`
+    mutation createLostItems($name: String!, $login: String!, $description: String!, $location: String!, $date: String!, $image: String!, $removeItem: Boolean!) {
+        createLostItems(name: $name, login: $login, description: $description, location: $location, date: $date, image: $image, removeItem: $removeItem) {
             _id
             name
             description
@@ -13,17 +13,20 @@ export const CREATE_LOSTITMES = gql`
     }
 `;
 
-export const CREATE_FOUNDITEMS = gql`
-    mutation createFoundItems($name: String!, $description: String!, $location: String!, $date: String!, $image: String!) {
-        createFoundItems(name: $name, description: $description, location: $location, date: $date, image: $image) {
+export const REMOVE_FOUND_ITEM = gql`
+    mutation removeLostItems($name: String!, $login: String!, $description: String!, $location: String!, $date: String!, $image: String!, $removeItem: Boolean!) {
+        removeLostItems(name: $name, login: $login, description: $description, location: $location, date: $date, image: $image, removeItem: $removeItem) {
             _id
             name
+            login
             description
             location
             date
             image
         }
     }
-`;      
+`;
+
+     
 
 
