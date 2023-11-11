@@ -27,6 +27,20 @@ export const REMOVE_FOUND_ITEM = gql`
     }
 `;
 
+export const ADD_USER = gql`
+    mutation addUser($name: String!, $login: String!, $email: String!, $password: String!) {
+        addUser(name: $name, login: $login, email: $email, password: $password) {
+            token
+            user {
+                _id
+                name
+                login
+                email
+                password
+            }
+        }
+`;
+
      
 
 
