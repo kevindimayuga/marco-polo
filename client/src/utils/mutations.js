@@ -57,7 +57,6 @@ export const REMOVE_FOUND_ITEM = gql`
         removeLostItems(name: $name, login: $login, description: $description, location: $location, date: $date, image: $image, removeItem: $removeItem) {
             _id
             name
-            login
             description
             location
             date
