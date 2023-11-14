@@ -7,7 +7,7 @@ const resolvers = {
         getSingleUser: async (parent, { id }, context) => {
             if (!context.user) {
                 const getSingleUser = await users.findOne({ _id: id })
-                .populate('lostItems')
+                // .populate('lostItems')
                 .populate('foundItems')
 
                 return getSingleUser;
@@ -17,7 +17,7 @@ const resolvers = {
         getUsers: async (parent, args, context) => {
             if (!context.user) {
                 const getUsers = await users.find({})
-                .populate('lostItems')
+                // .populate('lostItems')
                 .populate('foundItems')
 
                 return getUsers;
@@ -27,7 +27,7 @@ const resolvers = {
         getSingleItem: async (parent, { id }, context) => {
             if (!context.user) {
                 const getSingleItem = await foundItems.findOne({ _id: id })
-                .populate('owner')
+                // .populate('owner')
 
                 return getSingleItem;
             }
@@ -36,7 +36,7 @@ const resolvers = {
         getItems: async (parent, { category }, context) => {
             if (!context.user) {
                 const getItems = await foundItems.find({ category: category })
-                .populate('owner')
+                // .populate('owner')
 
                 return getItems;
             }
@@ -66,10 +66,10 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
         },
-        addLostItem: async (parent, args) => {
-            const item = await lostItems.create(args);
-            return item;
-        },
+        // addLostItem: async (parent, args) => {
+        //     const item = await lostItems.create(args);
+        //     return item;
+        // },
         addFoundItem: async (parent, args) => {
             const item = await foundItems.create(args);
             return item;
