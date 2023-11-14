@@ -1,23 +1,18 @@
 const db = require('../config/connection');
-const { foundItemsData, lostItemsData, usersData } = require('../models');
+const { foundItems, lostItems, users } = require('../models');
 const cleanDB = require('./cleanDB');
-const lostItemsData = require('./lostItemData.json');
-const foundItemsData = require('./foundItemData.json');
-const usersData = require('./usersData.json');
+const lostItemsSeeds = require('./lostItemData.json');
+const foundItemsSeeds = require('./foundItemData.json');
+const usersSeeds = require('./usersData.json');
 // const users = require('../models/users');
-
-
 db.once('open', async () => {
-  await cleanDB('lostItems', 'LostItems');
-  await cleanDB('foundItems', 'FoundItems');
-  await cleanDB('user', 'users');
-
-  const lostItems = await lostItems.create(lostItemsData);
-  const foundItems = await foundItems.create(foundItemsData);
-  const users = await users.map(usersData);
-
-
-
+  await cleanDB('lostItems', 'lostItems');
+  await cleanDB('foundItems', 'foundItems');
+  await cleanDB('users', 'users');
+  console.log(usersSeeds)
+  await lostItems.create(lostItemsSeeds);
+  await foundItems.create(foundItemsSeeds);
+  await users.create(usersSeeds);
   console.log('Items and Users Seeded!');
   process.exit(0);
 });
