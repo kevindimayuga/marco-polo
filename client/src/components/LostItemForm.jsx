@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import { useLazyQuery } from "@apollo/client";
-import { GET_LOST_ITEMS } from "../utils/mutations";
+import { GET_LOSTITEMS } from "../utils/queries";
 
 const LostItemSearch = () => {
     // This will hold the search parameters that will be used in the GET_LOST_ITEMS query.
