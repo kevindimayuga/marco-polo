@@ -1,5 +1,5 @@
-{
-    "users": [
+
+[
         {
             "name": "John Doe",
             "username": "john_doe",
@@ -60,5 +60,4 @@
             "email": "grace.l@example.com",
             "password": "gracepass"
         }
-    ]
-}
+]

@@ -15,11 +15,10 @@ const foundItemsSchema = new Schema(
             location: String,
             required: true
         },
-        lostitems: [
-            {
-              type: Schema.Types.ObjectId,
-              ref: 'Lost'
-            }
+        datefound: [ {
+           type: Date,
+           default: Date.now
+        }
         ]
     }
 );
