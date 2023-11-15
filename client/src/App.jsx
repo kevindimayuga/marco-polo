@@ -38,7 +38,7 @@ function App() {
     <ApolloProvider client={client}>
       <div>
         <NavBar />
-        <ItemList items={items} />
+        <ItemList />
         <LoginForm />
         <SignupForm />
         <FoundItemForm />

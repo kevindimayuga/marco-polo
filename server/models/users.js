@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const itemSchema = require('./foundItems');
 
 const usersSchema = new Schema(
     {
@@ -20,7 +21,11 @@ const usersSchema = new Schema(
         password: {
             type: String,
             required: true
-        }
+        },
+        foundItems: [{
+            type: Schema.Types.ObjectId,
+            ref: 'FoundItems'
+        }]
     }
 );
 

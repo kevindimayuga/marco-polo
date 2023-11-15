@@ -11,7 +11,6 @@ const typeDefs = `
         name: String!
         username: String!
         email: String!
-        lostItems: [Item]
         foundItems: [Item]
     }
 
@@ -21,15 +20,12 @@ const typeDefs = `
         description: String
         category: String!
         location: String!
-        dateLost: String
-        dateFound: String
-        owner: User
+        datefound: String
     }
 
     type Mutation {
         addUser(name: String!, username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
-        addLostItem(input: ItemInput!): Item
         addFoundItem(input: ItemInput!): Item
         removeItem(id: ID!): Item
     }
@@ -39,9 +35,7 @@ const typeDefs = `
         description: String
         category: String!
         location: String!
-        dateLost: String
         dateFound: String
-        ownerID: ID!
     }
 
     type Auth {
