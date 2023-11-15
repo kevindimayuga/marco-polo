@@ -39,6 +39,7 @@ function App() {
       <div>
         <NavBar />
         <ItemList items = {items}/>
+        <ItemList items={items} />
         <LoginForm />
         <SignupForm />
         <FoundItemForm />
