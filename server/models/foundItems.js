@@ -15,11 +15,11 @@ const foundItemsSchema = new Schema(
             location: String,
             required: true
         },
-        datefound: [ {
-           type: Date,
-           default: Date.now
-        }
-        ]
+        // datefound: [ {
+        //    type: Date,
+        //    default: Date.now
+        // }
+        // ]
     }
 );
 

@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
@@ -10,9 +11,10 @@ import LoginForm from './components/LoginForm';
 import SignupForm from './components/SignupForm';
 import FoundItemForm from './components/FoundItemForm';
 import LostItemForm from './components/LostItemForm';
-
 import Auth from './utils/auth';
 import './App.css';
+
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -38,8 +40,8 @@ function App() {
     <ApolloProvider client={client}>
       <div>
         <NavBar />
-        <ItemList items = {items}/>
-        <ItemList items={items} />
+        {/* <ItemList items={items} /> */}
+        <ItemList />
         <LoginForm />
         <SignupForm />
         <FoundItemForm />
