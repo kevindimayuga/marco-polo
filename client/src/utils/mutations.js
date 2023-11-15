@@ -11,6 +11,7 @@ export const ADD_USER = gql`
                 email              
             }
         }
+    }
 `;
 
 export const LOGIN_USER = gql`
@@ -22,6 +23,7 @@ export const LOGIN_USER = gql`
                     email
                 }
             }
+        }
 `;
 
 export const ADD_FOUND_ITEM = gql`
@@ -35,6 +37,7 @@ export const ADD_FOUND_ITEM = gql`
             image
         }
     }
+
 `;
 
 export const ADD_LOST_ITEM = gql`
@@ -48,6 +51,7 @@ export const ADD_LOST_ITEM = gql`
             image
         }
     }
+
 `;
 
 export const REMOVE_FOUND_ITEM = gql`

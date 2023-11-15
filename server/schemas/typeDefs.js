@@ -48,7 +48,7 @@ const typeDefs = `
         token: ID!
         user: User
     }
-}`
+`;
 
 
 module.exports = typeDefs;
