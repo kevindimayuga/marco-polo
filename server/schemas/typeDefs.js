@@ -20,7 +20,6 @@ const typeDefs = `
         description: String
         category: String!
         location: String!
-        datefound: String
     }
 
     type Mutation {
@@ -35,7 +34,6 @@ const typeDefs = `
         description: String
         category: String!
         location: String!
-        dateFound: String
     }
 
     type Auth {

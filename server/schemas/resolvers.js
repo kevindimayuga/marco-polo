@@ -33,9 +33,10 @@ const resolvers = {
             }
                 throw new AuthenticationError('Not logged in');
             },
-        getItems: async (parent, { category }, context) => {
+        getItems: async (parent, args, context) => {
             if (!context.user) {
-                const getItems = await foundItems.find({ category: category })
+                // const getItems = await foundItems.find({ category: category })
+                const getItems =await foundItems.find({})
                 // .populate('owner')
 
                 return getItems;
