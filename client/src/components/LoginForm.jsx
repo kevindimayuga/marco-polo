@@ -54,7 +54,8 @@ const LoginForm = () => {
             </label>
             <br />
 
-            <button type="submit">Login</button>
+            <a href="/itemlist">Login</a>
+            {/* <button type="submit">Login</button> */}
         </form>
     );
 };
