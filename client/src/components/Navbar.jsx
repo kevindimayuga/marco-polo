@@ -9,23 +9,26 @@ export default function Nav() {
             fontFamily: 'helvetica',
             flexDirection: 'row',
             alignItems: 'flex-start',
-            justifyContent: 'flex-start',
+            justifyContent: 'center',
           }}
         >
           <div style={linkStyle}>
-            <a href="#">Home</a>
+            <a href="/loginform">Login</a>
           </div>
           <div style={linkStyle}>
-            <a href="#">Login</a>
+            <a href="/signupform">Sign Up</a>
           </div>
           <div style={linkStyle}>
-            <a href="#">Register</a>
+            <a href="/loginform">Item List</a>
           </div>
           <div style={linkStyle}>
-            <a href="#">About</a>
+            <a href="/lostitemform">Search Item</a>
           </div>
           <div style={linkStyle}>
-            <a href="#">Contact</a>
+            <a href="/founditemform">Report an Item</a>
+          </div>
+          <div style={linkStyle}>
+            <a href="/contactform">Contact</a>
           </div>
         </section>
       </nav>

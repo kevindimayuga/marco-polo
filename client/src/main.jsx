@@ -5,11 +5,13 @@ import './index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+import Home from './components/Home.jsx'
 import LoginForm from './components/LoginForm.jsx'
 import SignupForm from './components/SignupForm.jsx'
 import ItemList from './components/ItemList.jsx'
 import FoundItemForm from './components/FoundItemForm.jsx'
 import LostItemForm from './components/LostItemForm.jsx'
+import ContactForm from './components/ContactForm.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,11 +20,17 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <LoginForm />
-      }, {
+        element: <Home />
+      },
+      {
+        path: '/signupform',
+        element: <SignupForm />
+      }, 
+      {
         path: '/loginform',
         element: <LoginForm />
-      }, {
+      }, 
+      {
         path: '/itemlist',
         element: <ItemList />
       },
@@ -33,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/lostitemform',
         element: <LostItemForm />
+      },
+      {
+        path: '/contactform',
+        element: <ContactForm />
       },
     ],
   },
