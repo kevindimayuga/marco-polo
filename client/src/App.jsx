@@ -40,8 +40,8 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div>
-        {/* <NavBar />
-        <ItemList />
+        <NavBar />
+        {/* <ItemList />
         <LoginForm />
         <SignupForm />
         <FoundItemForm />
