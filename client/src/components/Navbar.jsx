@@ -13,10 +13,10 @@ export default function Nav() {
           }}
         >
           <div style={linkStyle}>
-            <a href="/loginform">Login</a>
+            <a href="/signupform">Sign Up</a>
           </div>
           <div style={linkStyle}>
-            <a href="/signupform">Sign Up</a>
+            <a href="/loginform">Login</a>
           </div>
           <div style={linkStyle}>
             <a href="/loginform">Item List</a>

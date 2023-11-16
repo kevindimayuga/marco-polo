@@ -22,13 +22,13 @@ const SignupForm = () => {
   return (
     <div className="card bg-white card-rounded w-50">
       <div className="card-header bg-dark text-center">
-        <h1>Welcome to Marco Polo 🐼</h1>
-        <p>Where you can find your lost items!!</p>
+        <h3>Sign up for an Account</h3>
       </div>
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form className="signup-form" onSubmit={handleSubmit}>
+      <label className="signup-label">
         Email:
         <input
+          className="signup-input"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -37,9 +37,10 @@ const SignupForm = () => {
       </label>
       <br />
 
-      <label>
+      <label className="signup-label">
         Username:
         <input
+          className="signup-input"
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -48,9 +49,10 @@ const SignupForm = () => {
       </label>
       <br />
 
-      <label>
+      <label className="signup-label">
         Password:
         <input
+          className="signup-input"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
@@ -59,8 +61,12 @@ const SignupForm = () => {
       </label>
       <br />
 
-      <a href="/loginform">Sign Up</a>
+      <a href="/loginform" className="signup-ahref">Sign Up</a>
       {/* <button type="submit">Sign Up</button> */}
+
+      <p>
+        Already have an account? <a href="/loginform">Login</a>
+      </p>
     </form>
     </div>
   );

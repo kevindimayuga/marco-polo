@@ -25,45 +25,49 @@ const LostItemSearch = () => {
     };
 
     return (
-        <div>
+        <div className="search-form">
             <h2>Search for a Lost Item</h2>
-            <label>
+            <label className="search-label">
                 Category:
                 <input
+                    className="search-input"
                     type="text"
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
                 />
             </label>
             <br />
-            <label>
+            <label className="search-label">
                 Item Name:
                 <input
+                    className="search-input"
                     type="text"
                     value={itemName}
                     onChange={(e) => setItemName(e.target.value)}
                 />
             </label>
             <br />
-            <label>
+            <label className="search-label">
                 Location:
                 <input
+                    className="search-input"
                     type="text"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                 />
             </label>
             <br />
-            <label>
+            <label className="search-label">
                 Date Lost:
                 <input
+                    className="search-input"
                     type="date"
                     value={dateLost}
                     onChange={(e) => setDateLost(e.target.value)}
                 />
             </label>
             <br />
-            <button onClick={handleSearch}>Search</button>
+            <button className="search-button" onClick={handleSearch}>Search</button>
 
             {loading && <p>Loading...</p>}
             {error && <p>Error: {error.message}</p>}
