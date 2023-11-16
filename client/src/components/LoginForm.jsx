@@ -22,13 +22,13 @@ const LoginForm = () => {
     return (
         <div className="card bg-white card-rounded w-50">
             <div className="card-header bg-dark text-center">
-            <h1>Welcome to Marco Polo 🐼</h1>
-            <p>Where you can find your lost items!!</p>
+            <h3>Login to your Account</h3>
             </div>
-        <form onSubmit={handleSubmit}>
-            <label>
+        <form className="login-form" onSubmit={handleSubmit}>
+            <label className="login-label">
                 Email:
                 <input
+                    className="login-input"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -37,9 +37,10 @@ const LoginForm = () => {
             </label>
             <br />
 
-            <label>
+            <label className="login-label">
                 Username:
                 <input
+                    className="login-input"
                     type="text"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
@@ -48,9 +49,10 @@ const LoginForm = () => {
             </label>
             <br />
 
-            <label>
+            <label className="login-label">
                 Password:
                 <input
+                    className="login-input"
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
@@ -59,7 +61,7 @@ const LoginForm = () => {
             </label>
             <br />
 
-            <a href="/itemlist">Login</a>
+            <a href="/itemlist" className="login-ahref">Login</a>
             {/* <button type="submit">Login</button> */}
         </form>
         </div>

@@ -51,10 +51,11 @@ const FoundItemForm = () => {
     return (
         <div>
             <h2>Report a Found Item</h2>
-            <form onSubmit={handleFoundItemSubmit}>
-                <label>
+            <form className="report-form" onSubmit={handleFoundItemSubmit}>
+                <label className="report-label">
                     Category:
                     <input
+                        className="report-input"
                         type="text"
                         value={category}
                         onChange={(e) => setCategory(e.target.value)}
@@ -63,9 +64,10 @@ const FoundItemForm = () => {
                 </label>
                 <br />
 
-                <label>
+                <label className="report-label">
                     Item Name:
                     <input
+                        className="report-input"
                         type="text"
                         value={itemName}
                         onChange={(e) => setItemName(e.target.value)}
@@ -74,9 +76,10 @@ const FoundItemForm = () => {
                 </label>
                 <br />
 
-                <label>
+                <label className="report-label">
                     Description:
-                    <textarea
+                    <input
+                        className="report-input"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         required
@@ -84,9 +87,10 @@ const FoundItemForm = () => {
                 </label>
                 <br />
 
-                <label>
+                <label className="report-label">
                     Location:
                     <input
+                        className="report-input"
                         type="text"
                         value={location}
                         onChange={(e) => setLocation(e.target.value)}
@@ -95,9 +99,10 @@ const FoundItemForm = () => {
                 </label>
                 <br />
 
-                <label>
+                <label className="report-label">
                     Date Found:
                     <input
+                        className="report-input"
                         type="date"
                         value={dateFound}
                         onChange={(e) => setDateFound(e.target.value)}
@@ -106,9 +111,10 @@ const FoundItemForm = () => {
                 </label>
                 <br />
 
-                <label>
+                <label className="report-label">
                     Contact Name:
                     <input
+                        className="report-input"
                         type="text"
                         value={contactName}
                         onChange={(e) => setContactName(e.target.value)}
@@ -120,6 +126,7 @@ const FoundItemForm = () => {
                 <label>
                     Contact Email:
                     <input
+                        className="report-input"
                         type="text"
                         value={contactEmail}
                         onChange={(e) => setContactEmail(e.target.value)}
@@ -128,7 +135,7 @@ const FoundItemForm = () => {
                 </label>
                 <br />
 
-                <button type="submit" disabled={loading}>
+                <button className="report-button" type="submit" disabled={loading}>
                     {loading ? 'Submitting...' : 'Submit Report'}
                 </button>
 
