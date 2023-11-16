@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+.container {
+  text-align: center;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px; /* Adjust the width based on your design */
+  text-align: center;
+}
+
+.item-name,
+.item-location { font-weight: bold;
+  margin-bottom: 5px;
+  /* Additional styling for item name and location */
+}
+.item-location {
+  color: #007bff;
+}
