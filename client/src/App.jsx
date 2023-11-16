@@ -4,6 +4,7 @@
 
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import { Outlet } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import ItemList from './components/ItemList';
@@ -39,13 +40,13 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div>
-        <NavBar />
-        {/* <ItemList items={items} /> */}
+        {/* <NavBar />
         <ItemList />
         <LoginForm />
         <SignupForm />
         <FoundItemForm />
-        <LostItemForm />
+        <LostItemForm /> */}
+        <Outlet />
       </div>
     </ApolloProvider>
   )
