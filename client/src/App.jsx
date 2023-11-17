@@ -7,13 +7,13 @@ import { setContext } from '@apollo/client/link/context';
 import { Outlet } from 'react-router-dom';
 
 import Header from './components/Header';
-import NavBar from './components/NavBar';
-import ItemList from './components/ItemList';
-import LoginForm from './components/LoginForm';
-import SignupForm from './components/SignupForm';
-import FoundItemForm from './components/FoundItemForm';
-import LostItemForm from './components/LostItemForm';
-import Auth from './utils/auth';
+import NavBar from './components/Navbar';
+// import ItemList from './components/ItemList';
+// import LoginForm from './components/LoginForm';
+// import SignupForm from './components/SignupForm';
+// import FoundItemForm from './components/FoundItemForm';
+// import LostItemForm from './components/LostItemForm';
+// import Auth from './utils/auth'
 import './App.css';
 
 
