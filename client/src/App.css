@@ -159,3 +159,27 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.contact-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.contact-label {
+  display: block;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 8px;
+}
+
+.contact-button {
+  background-color: #4147bbaa;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
